@@ -1,0 +1,855 @@
+Demo
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+
+ seen 64, trained: 32013 K-images (500 Kilo-batches_64) 
+video file: nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)800, height=(int)600,format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink
+GST_ARGUS: Creating output stream
+CONSUMER: Waiting until producer is connected...
+GST_ARGUS: Available Sensor modes :
+GST_ARGUS: 3264 x 2464 FR = 21.000000 fps Duration = 47619048 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 3264 x 1848 FR = 28.000001 fps Duration = 35714284 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1920 x 1080 FR = 29.999999 fps Duration = 33333334 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1640 x 1232 FR = 29.999999 fps Duration = 33333334 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1280 x 720 FR = 59.999999 fps Duration = 16666667 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1280 x 720 FR = 120.000005 fps Duration = 8333333 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: Running with following settings:
+   Camera index = 0 
+   Camera mode  = 5 
+   Output Stream W = 1280 H = 720 
+   seconds to Run    = 0 
+   Frame Rate = 120.000005 
+GST_ARGUS: Setup Complete, Starting captures for 0 seconds
+GST_ARGUS: Starting repeat capture requests.
+CONSUMER: Producer has connected; continuing.
+Video stream: 800 x 600 
+Objects:
+
+
+FPS:0.0 	 AVG_FPS:0.0
+Objects:
+
+
+FPS:1.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:3.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:3.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:5.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:6.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:7.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:7.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:7.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:8.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:8.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:9.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:9.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:9.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:10.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:10.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:10.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:10.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.0 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:11.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.7 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.7 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.8 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.9 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.0 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.3 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.9 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.5 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.4 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.3 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.6 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.9 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.9 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.9 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:12.8 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:12.9
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.3 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.3 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.1 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.2 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.6 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.7 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.7 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.7 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.8 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.7 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:13.8 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:14.1 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:14.3 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:14.5 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:14.6 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:14.9 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.3 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.6 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.8 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.8 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.9 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.9 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.7 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.3 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.3 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.4 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.9 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.6 	 AVG_FPS:13.0
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.5 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.8 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:15.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:16.1 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:16.2 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:16.2 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:16.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:16.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+
+
+FPS:16.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+Objects:
+

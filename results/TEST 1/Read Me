@@ -1,0 +1,6 @@
+These results were obtained by using the custom yolo v4 with the custom name cfg. We then loaded some pictures of cars with number plates from trinidad and observed what the model recognized
+
+Notes:
+- It did not recognize all number plates
+- Seemed to favour a particular angle
+- the computer screen has reflections so may not have nbeen trhough real world testing

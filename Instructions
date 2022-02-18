@@ -1,0 +1,358 @@
+Instructions:
+
+1. Follow config steps from this website: https://morioh.com/p/5dcf2b8c8308.
+
+2. Before we can run make, we need to ensure that cuda is available on the path. We do the following:
+   Use a text editor to open the .bashrc file in the home directory of the user folder.
+   Add the following lines at the end:
+   $ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+   $ export LD_LIBRARY_PATH=/usr/local/cuda/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+3. This should be done after executing #4. There are two files that should be in the output directory.
+   This command needs to be executed before we run part_2.py: export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+
+4. In order to get image detection from CSP Camera module, use the following commands: 
+
+(INTENSIVE)
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+(TINY YOLO)
+./darknet detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+(CUSTOM LICENSE PLATE DETECTOR - INTENSIVE)
+./darknet detector demo ./tt_lp_detector/cfg/coco.data ./tt_lp_detector/lp_detector/cfg/custom-yolov4-detector.cfg ./tt_lp_detector/lp_detector/models/license_plate_v1_2000.weights 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+Best Thus Far NO CRASHING:
+
+********************************************
+./darknet detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)800, height=(int)600,format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+./darknet detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights -ext_output > results.txt 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)800, height=(int)600,format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+Optimal One Thus Far:
+V3
+./darknet detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights -ext_output > results.txt -out_filename res.avi 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)800, height=(int)600,format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+V4
+./darknet detector demo cfg/coco.data cfg/yolov4-tiny.cfg yolov4-tiny.weights -ext_output > ./output/results.txt -out_filename ./output/res.avi 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)800, height=(int)600,format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+
+Custom V4
+./darknet detector demo cfg/coco.data cfg/yolov4-tiny-custom.cfg custom-yolov4-tiny-detector_best.weights -ext_output > ./output/results.txt -out_filename ./output/res.avi 'nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)800, height=(int)600,format=(string)NV12, framerate=(fraction)20/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink'
+********************************************
+
+After attempting each trial we can reset the camera via the following: sudo service nvargus-daemon restart
+
+NOTE:
+- In order to get the custom model to work we need to make some modifications to the .cfg file since we are using only 1 class instead of 80.
+- The coco.data file needs to be modified (its located in the cfg directory. Here is what the file should look like for custom model:
+
+<BEGIN
+
+classes= 1
+#classes= 80
+train  = /home/pjreddie/data/coco/trainvalno5k.txt
+valid  = coco_testdev
+#valid = data/coco_val_5k.list
+names = data/coco_new.names
+#names = data/coco.names
+backup = /home/pjreddie/backup/
+eval=coco
+
+<END>
+
+- The yolo model needs to be modified terms of the filters and classes. Instructions were found at:https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects 
+Here is the modified cfg file:
+
+<BEGIN>
+
+[net]
+# Testing
+#batch=1
+#subdivisions=1
+# Training
+batch=64
+subdivisions=16
+width=416
+height=416
+channels=3
+momentum=0.9
+decay=0.0005
+angle=0
+saturation = 1.5
+exposure = 1.5
+hue=.1
+
+learning_rate=0.00261
+burn_in=1000
+max_batches = 6000
+policy=steps
+steps=4800,5400
+scales=.1,.1
+
+[convolutional]
+batch_normalize=1
+filters=32
+size=3
+stride=2
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=3
+stride=2
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers=-1
+groups=2
+group_id=1
+
+[convolutional]
+batch_normalize=1
+filters=32
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=32
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers = -1,-2
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers = -6,-1
+
+[maxpool]
+size=2
+stride=2
+
+[convolutional]
+batch_normalize=1
+filters=128
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers=-1
+groups=2
+group_id=1
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers = -1,-2
+
+[convolutional]
+batch_normalize=1
+filters=128
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers = -6,-1
+
+[maxpool]
+size=2
+stride=2
+
+[convolutional]
+batch_normalize=1
+filters=256
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers=-1
+groups=2
+group_id=1
+
+[convolutional]
+batch_normalize=1
+filters=128
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=128
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers = -1,-2
+
+[convolutional]
+batch_normalize=1
+filters=256
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[route]
+layers = -6,-1
+
+[maxpool]
+size=2
+stride=2
+
+[convolutional]
+batch_normalize=1
+filters=512
+size=3
+stride=1
+pad=1
+activation=leaky
+
+##################################
+
+[convolutional]
+batch_normalize=1
+filters=256
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=512
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+size=1
+stride=1
+pad=1
+filters=18
+activation=linear
+
+
+
+[yolo]
+mask = 3,4,5
+anchors = 10,14,  23,27,  37,58,  81,82,  135,169,  344,319
+classes=1
+num=6
+jitter=.3
+scale_x_y = 1.05
+cls_normalizer=1.0
+iou_normalizer=0.07
+iou_loss=ciou
+ignore_thresh = .7
+truth_thresh = 1
+random=0
+resize=1.5
+nms_kind=greedynms
+beta_nms=0.6
+
+[route]
+layers = -4
+
+[convolutional]
+batch_normalize=1
+filters=128
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[upsample]
+stride=2
+
+[route]
+layers = -1, 23
+
+[convolutional]
+batch_normalize=1
+filters=256
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+size=1
+stride=1
+pad=1
+filters=18
+activation=linear
+
+[yolo]
+mask = 0,1,2
+anchors = 10,14,  23,27,  37,58,  81,82,  135,169,  344,319
+classes=1
+num=6
+jitter=.3
+scale_x_y = 1.05
+cls_normalizer=1.0
+iou_normalizer=0.07
+iou_loss=ciou
+ignore_thresh = .7
+truth_thresh = 1
+random=0
+resize=1.5
+nms_kind=greedynms
+beta_nms=0.6
+
+<END>
+
+
+
+
+
+
+

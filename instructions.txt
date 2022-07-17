@@ -1,0 +1,19 @@
+Deploying OCR model
+
+1. RUN : docker run -it -v C:\Users\tt_license_plates_model_best_new_data_tf_saved_model:/tf_serving -p 8501:8501  --entrypoint /bin/bash tensorflow/serving
+2. RUN (on tensorflow root cli): tensorflow_model_server --rest_api_port=8501 --model_name=ocr_model --model_base_path=/tf_serving/
+3. Run OCR_handler to test server
+
+Note: The location of the saved model, the model needs to be the one without the ctc loss layer
+
+
+
+Deploying the Plate_recog model
+
+1. Navigate to deployment folder and into the plate recog using the cli
+2. Build the docker image using :  docker build -t plate_recog .
+3. Run the image: docker run -dp 8080:8080 plate_recog
+4. Ping server to get health check: curl http://localhost:8080/ping (make sure it is healthy)
+5. Send request to test server: curl -X POST http://localhost:8080/predictions/license_plate -T car.jpg
+
+Note: The yolo output is in the format [cx, cy, w, h, conf, pred_classes]

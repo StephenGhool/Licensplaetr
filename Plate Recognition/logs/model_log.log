@@ -1,0 +1,500 @@
+2022-06-09T12:53:36,417 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:53:36,424 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]11104
+2022-06-09T12:53:36,426 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:53:36,426 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:53:36,449 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:53:36,492 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:53:45,849 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:53:45,849 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:53:45,851 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:53:45,851 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:53:45,854 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:53:45,855 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:53:45,856 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:53:45,861 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:53:45,862 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:53:45,867 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:53:45,867 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:53:45,869 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:53:45,870 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:53:45,871 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:53:45,872 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:53:45,874 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:53:45,879 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:53:45,880 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:53:45,881 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T12:53:45,883 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T12:53:45,883 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T12:53:45,884 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T12:53:45,885 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T12:53:45,885 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T12:53:45,886 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 180, in <lambda>
+2022-06-09T12:53:45,887 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 180, in <lambda>
+2022-06-09T12:53:45,888 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn = lambda ctx: entry_point(None, ctx)
+2022-06-09T12:53:45,889 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     initialize_fn = lambda ctx: entry_point(None, ctx)
+2022-06-09T12:53:45,890 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - TypeError: handle() takes 1 positional argument but 2 were given
+2022-06-09T12:53:45,895 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - TypeError: handle() takes 1 positional argument but 2 were given
+2022-06-09T12:53:48,302 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:53:48,303 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]18724
+2022-06-09T12:53:48,305 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:53:48,305 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:53:48,310 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:53:48,334 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:53:51,653 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:53:51,653 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:53:51,654 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:53:51,660 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:53:51,667 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:53:51,669 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:53:51,674 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:53:51,682 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:53:51,684 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:53:51,689 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:53:51,698 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:53:51,701 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:53:51,711 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:53:51,718 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:53:51,727 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:53:51,727 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:53:51,736 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:53:51,739 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T12:53:51,746 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:53:51,767 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T12:53:51,771 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T12:53:51,786 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T12:53:51,786 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T12:53:54,014 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:53:54,015 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]17164
+2022-06-09T12:53:54,016 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:53:54,017 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:53:54,022 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:53:54,036 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:53:57,465 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:53:57,465 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:53:57,465 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:53:57,467 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:53:57,469 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:53:57,469 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:53:57,471 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:53:57,472 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:53:57,474 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:53:57,475 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:53:57,476 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:53:57,477 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:53:57,485 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:53:57,486 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:53:57,487 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:53:57,489 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:53:57,495 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T12:54:00,818 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:54:00,819 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]11740
+2022-06-09T12:54:00,820 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:54:00,822 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:54:00,829 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:54:00,842 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:54:03,887 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:03,887 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:03,888 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:03,890 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:03,892 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:03,893 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:03,896 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:03,896 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:03,897 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:03,898 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:03,900 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:03,900 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:03,909 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:03,910 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:03,910 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:03,911 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:03,915 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:54:08,288 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:54:08,289 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]35104
+2022-06-09T12:54:08,291 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:54:08,292 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:54:08,298 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:54:08,317 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:54:11,579 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:11,579 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:11,579 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:11,581 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:11,583 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:11,583 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:11,585 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:11,586 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:11,588 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:11,588 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:11,590 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:11,590 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:11,594 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:11,596 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:11,603 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:17,854 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:54:17,855 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]8824
+2022-06-09T12:54:17,857 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:54:17,858 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:54:17,862 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:54:17,876 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:54:21,078 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:21,078 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:21,079 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:21,081 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:21,084 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:21,085 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:21,086 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:21,087 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:21,089 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:21,092 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:21,094 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:21,095 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:21,096 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:21,097 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:21,098 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:21,103 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:54:30,445 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:54:30,446 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]21756
+2022-06-09T12:54:30,448 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:54:30,448 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:54:30,453 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:54:30,478 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:54:33,532 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:33,532 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:33,532 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:33,535 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:33,537 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:33,538 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:33,539 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:33,540 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:33,542 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:33,543 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:33,545 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:33,545 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:33,547 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:33,547 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:54:33,552 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:33,554 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T12:54:33,562 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T12:54:47,852 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:54:47,853 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]32388
+2022-06-09T12:54:47,854 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:54:47,854 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:54:47,859 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:54:47,871 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:54:51,000 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:51,000 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:54:51,000 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:51,002 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:54:51,004 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:51,005 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:54:51,008 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:51,009 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:54:51,010 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:51,011 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:54:51,013 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:51,013 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:54:51,016 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:51,019 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:54:51,024 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:51,026 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:54:51,027 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T12:55:13,534 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:55:13,536 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]13168
+2022-06-09T12:55:13,540 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:55:13,541 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:55:13,549 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:55:13,568 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:55:16,924 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:55:16,924 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:55:16,924 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:55:16,926 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:55:16,928 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:55:16,929 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:55:16,931 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:55:16,932 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:55:16,936 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:55:16,936 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:55:16,938 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:55:16,942 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:55:16,947 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:55:16,948 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:55:16,949 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T12:55:52,329 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:55:52,330 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]5164
+2022-06-09T12:55:52,332 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:55:52,333 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:55:52,339 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:55:52,358 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:55:55,537 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:55:55,537 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:55:55,538 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:55:55,541 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:55:55,543 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:55:55,544 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:55:55,546 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:55:55,547 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:55:55,548 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:55:55,555 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:55:55,559 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:55:55,563 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:55:55,563 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:56:51,846 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T12:56:51,847 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]29300
+2022-06-09T12:56:51,847 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T12:56:51,848 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.9.5
+2022-06-09T12:56:51,851 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T12:56:51,872 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T12:56:54,900 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T12:56:54,900 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T12:56:54,900 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:56:54,904 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T12:56:54,905 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:56:54,906 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T12:56:54,907 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T12:56:54,908 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T12:56:54,911 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:56:54,912 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T12:56:54,913 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:56:54,915 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T12:56:54,915 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:56:54,919 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Roaming\Python\Python39\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T12:56:54,921 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:34,465 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:07:34,467 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]33312
+2022-06-09T13:07:34,468 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:07:34,469 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:07:35,118 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:07:35,178 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:07:38,747 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:38,747 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:38,748 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:38,749 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:38,750 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:38,753 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:38,754 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:38,755 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:38,756 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:38,756 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:38,757 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:38,762 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:38,763 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:38,764 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:38,765 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:07:38,766 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T13:07:38,767 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 180, in <lambda>
+2022-06-09T13:07:38,767 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn = lambda ctx: entry_point(None, ctx)
+2022-06-09T13:07:38,768 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - TypeError: handle() takes 1 positional argument but 2 were given
+2022-06-09T13:07:38,772 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:38,779 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:38,782 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:38,785 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:38,786 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:38,789 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:38,793 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:07:41,010 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:07:41,011 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]9924
+2022-06-09T13:07:41,015 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:07:41,016 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:07:41,022 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:07:41,035 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:07:44,104 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:44,104 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:44,105 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:44,113 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:44,114 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:44,115 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:44,117 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:44,117 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:44,118 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:44,120 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:44,120 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:44,122 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:44,123 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:44,125 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:44,126 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:44,127 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:44,136 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:44,137 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:44,138 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:07:44,139 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T13:07:44,139 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 180, in <lambda>
+2022-06-09T13:07:44,140 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn = lambda ctx: entry_point(None, ctx)
+2022-06-09T13:07:44,141 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - TypeError: handle() takes 1 positional argument but 2 were given
+2022-06-09T13:07:46,264 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:07:46,265 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]21256
+2022-06-09T13:07:46,267 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:07:46,268 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:07:46,273 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:07:46,286 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:07:49,387 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:49,387 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:49,388 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:49,388 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:49,388 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:49,388 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:49,388 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:49,389 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:49,389 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:49,391 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:49,391 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:49,394 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:49,395 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:49,396 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:49,397 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:49,398 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:49,399 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:49,400 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:49,401 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:49,402 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:49,410 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:07:49,411 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:07:52,649 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:07:52,650 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]16176
+2022-06-09T13:07:52,650 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:07:52,650 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:07:52,653 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:07:52,671 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:07:55,844 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:55,844 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:07:55,844 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:55,845 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:07:55,845 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:55,845 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:07:55,846 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:55,846 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:07:55,846 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:55,846 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:07:55,847 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:55,847 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:07:55,849 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:55,849 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:07:55,850 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:55,850 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:07:55,850 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:55,850 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:07:55,850 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:55,851 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:07:55,851 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:09:43,723 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:09:43,724 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]34100
+2022-06-09T13:09:43,726 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:09:43,727 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:09:44,312 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:09:44,363 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:09:48,416 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context <ts.context.Context object at 0x00000149FBA33DC0>
+2022-06-09T13:09:48,416 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:09:48,417 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context sys properties {'model_dir': 'C:\\Users\\steph\\AppData\\Local\\Temp\\models\\98f951519b6644da98eff0266f513ca8', 'gpu_id': 0, 'batch_size': 1, 'server_name': 'MMS', 'server_version': '0.6.0', 'limit_max_image_pixels': True}
+2022-06-09T13:09:48,419 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:09:48,419 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:09:48,420 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:09:48,421 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:09:48,423 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:09:48,423 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:09:48,424 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:09:48,425 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:09:48,426 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:09:48,427 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:09:48,429 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:09:48,429 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:09:48,430 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:09:48,431 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:09:48,431 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:09:48,432 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:09:48,433 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:09:48,434 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:09:48,439 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:09:48,441 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T13:09:48,441 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:09:48,443 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 180, in <lambda>
+2022-06-09T13:09:48,444 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 151, in load
+2022-06-09T13:09:48,445 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     initialize_fn = lambda ctx: entry_point(None, ctx)
+2022-06-09T13:09:48,445 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2022-06-09T13:09:48,447 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\AppData\Local\Temp\models\98f951519b6644da98eff0266f513ca8\my_handler.py", line 109, in handle
+2022-06-09T13:09:48,448 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\model_loader.py", line 180, in <lambda>
+2022-06-09T13:09:48,448 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     _service.initialize(context)
+2022-06-09T13:09:48,450 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     initialize_fn = lambda ctx: entry_point(None, ctx)
+2022-06-09T13:09:48,454 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "c:\users\steph\onedrive - the university of the west indies, st. augustine\ttlabs\license plate recognition\deployment\venv3.8\lib\site-packages\ts\torch_handler\base_handler.py", line 91, in initialize
+2022-06-09T13:09:48,456 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\AppData\Local\Temp\models\98f951519b6644da98eff0266f513ca8\my_handler.py", line 109, in handle
+2022-06-09T13:09:48,458 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.model = self._load_torchscript_model(model_pt_path)
+2022-06-09T13:09:48,462 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     _service.initialize(context)
+2022-06-09T13:09:50,662 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:09:50,663 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]11824
+2022-06-09T13:09:50,665 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:09:50,666 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:09:50,672 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:09:50,684 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:09:54,502 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context <ts.context.Context object at 0x0000013095DB3D00>
+2022-06-09T13:09:54,502 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:09:54,502 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context sys properties {'model_dir': 'C:\\Users\\steph\\AppData\\Local\\Temp\\models\\98f951519b6644da98eff0266f513ca8', 'gpu_id': 0, 'batch_size': 1, 'server_name': 'MMS', 'server_version': '0.6.0', 'limit_max_image_pixels': True}
+2022-06-09T13:09:54,505 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:09:54,507 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:09:54,507 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:09:54,509 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:09:54,510 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:09:54,512 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:09:54,513 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:09:54,514 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:09:54,515 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:09:54,516 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:09:54,517 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:09:54,523 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:09:56,735 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:09:56,736 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]31948
+2022-06-09T13:09:56,738 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:09:56,739 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:09:56,744 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:09:56,757 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:10:00,666 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context <ts.context.Context object at 0x0000026AE7854D00>
+2022-06-09T13:10:00,666 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:10:00,666 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context sys properties {'model_dir': 'C:\\Users\\steph\\AppData\\Local\\Temp\\models\\98f951519b6644da98eff0266f513ca8', 'gpu_id': 0, 'batch_size': 1, 'server_name': 'MMS', 'server_version': '0.6.0', 'limit_max_image_pixels': True}
+2022-06-09T13:10:00,669 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:10:00,671 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:10:00,672 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:10:00,673 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:10:00,674 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:10:00,677 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:10:00,677 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:10:00,678 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:10:00,678 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:10:00,680 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:10:00,682 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:10:00,690 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:10:03,867 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:10:03,868 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]27100
+2022-06-09T13:10:03,869 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:10:03,870 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:10:03,875 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:10:03,888 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:10:07,864 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context <ts.context.Context object at 0x000001F3C62E4D00>
+2022-06-09T13:10:07,864 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Backend worker process died.
+2022-06-09T13:10:07,864 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - This is context sys properties {'model_dir': 'C:\\Users\\steph\\AppData\\Local\\Temp\\models\\98f951519b6644da98eff0266f513ca8', 'gpu_id': 0, 'batch_size': 1, 'server_name': 'MMS', 'server_version': '0.6.0', 'limit_max_image_pixels': True}
+2022-06-09T13:10:07,865 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Backend worker process died.
+2022-06-09T13:10:07,865 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:10:07,865 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2022-06-09T13:10:07,865 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:10:07,866 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 210, in <module>
+2022-06-09T13:10:07,866 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     worker.run_server()
+2022-06-09T13:10:07,866 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     worker.run_server()
+2022-06-09T13:10:07,866 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:10:07,867 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:10:07,867 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 181, in run_server
+2022-06-09T13:10:07,867 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:10:07,867 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2022-06-09T13:10:07,867 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:10:07,868 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 139, in handle_connection
+2022-06-09T13:10:07,868 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:10:07,870 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2022-06-09T13:10:07,874 [WARN ] W-9000-license_plate_1.0-stderr MODEL_LOG -     service = model_loader.load(
+2022-06-09T13:10:07,875 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG -   File "C:\Users\steph\OneDrive - The University of the West Indies, St. Augustine\TTLABS\License Plate Recognition\Deployment\venv3.8\Lib\site-packages\ts\model_service_worker.py", line 104, in load_model
+2022-06-09T13:19:32,885 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:19:32,887 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]16736
+2022-06-09T13:19:32,887 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:19:32,888 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:19:33,540 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:19:33,594 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
+2022-06-09T13:23:02,233 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Listening on port: None
+2022-06-09T13:23:02,234 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - [PID]24520
+2022-06-09T13:23:02,235 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Torch worker started.
+2022-06-09T13:23:02,235 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Python runtime: 3.8.0
+2022-06-09T13:23:03,001 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - Connection accepted: ('127.0.0.1', 9000).
+2022-06-09T13:23:03,039 [INFO ] W-9000-license_plate_1.0-stdout MODEL_LOG - model_name: license_plate, batchSize: 1
